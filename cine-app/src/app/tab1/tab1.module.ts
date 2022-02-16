@@ -5,7 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { Tab1Page } from './tab1.page';
 import { Tab1PageRoutingModule } from './tab1-routing.module';
 import { MovieCategoryComponent } from './movie-category/movie-category.component';
-import { MovieItemComponent } from '../components/movie/movie-item/movie-item.component';
+import { SharedModule } from '../shared.module';
+import { ChooseTheaterPage } from './pages/choose-theater/choose-theater.page';
 
 @NgModule({
   imports: [
@@ -13,7 +14,8 @@ import { MovieItemComponent } from '../components/movie/movie-item/movie-item.co
     CommonModule,
     FormsModule,
     Tab1PageRoutingModule,
+    SharedModule
   ],
-  declarations: [Tab1Page, MovieCategoryComponent, MovieItemComponent]
+  declarations: [Tab1Page, ChooseTheaterPage, MovieCategoryComponent]
 })
 export class Tab1PageModule {}

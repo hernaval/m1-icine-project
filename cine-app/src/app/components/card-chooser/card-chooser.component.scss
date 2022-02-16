@@ -1,0 +1,15 @@
+.card-chooser-container {
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 7px 4px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &.selected {
+        background: red;
+    }
+}

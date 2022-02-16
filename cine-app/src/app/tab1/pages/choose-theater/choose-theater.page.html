@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>choose-theater</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col size="2"> 
+      <app-movie-item [movie]="movie" ></app-movie-item> 
+    </ion-col>
+    <ion-col size="10"> 
+        <div class="movie-title">
+          <ion-text color="primary">
+            <h6>{{movie.title}}</h6>
+          </ion-text>
+          <ion-text color="secondary">
+            <p>Action|drama</p>
+          </ion-text>
+        </div>  
+        <div class="choose-container">
+          <ion-chip  outline="true" (click)="test()">
+            <ion-label>MAR 10 FRV</ion-label>
+          </ion-chip>
+          <ion-chip  outline="true">
+            <ion-label>7:00 PM</ion-label>
+          </ion-chip>
+        </div>
+    </ion-col>
+  </ion-row>
+
+      <div class="date-time-chooser-container" style="display: none;">
+        <div>
+          <ion-text color="primary">
+            <h3>Selectionner la date</h3>
+            <app-card-chooser></app-card-chooser>
+          </ion-text>
+        
+          <ion-text color="primary">
+            <h3>Selectionner l'heure</h3>
+          </ion-text>
+        </div>
+      </div>
+      
+
+      <div class="theather-chooser-container">
+        <app-card-chooser></app-card-chooser>
+      </div>  
+
+      <div class="seat-chooser-container">
+
+      </div>
+
+      <div class="action-wrapper">
+        <ion-button  expand="block" fill="solid" >
+          Suivant
+        </ion-button>
+      </div>
+
+      <!-- TODO (after this page, save ticket with unpay status)-->
+      
+        
+</ion-content>

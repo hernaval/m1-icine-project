@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { MovieDetailPageRoutingModule } from './movie-detail-routing.module';
+import { ChooseTheaterPageRoutingModule } from './choose-theater-routing.module';
 
-import { MovieDetailPage } from './movie-detail.page';
+import { ChooseTheaterPage } from './choose-theater.page';
 import { SharedModule } from 'src/app/shared.module';
 
 @NgModule({
@@ -14,9 +14,9 @@ import { SharedModule } from 'src/app/shared.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    MovieDetailPageRoutingModule,
-
+    SharedModule,
+    ChooseTheaterPageRoutingModule,
   ],
-  declarations: [MovieDetailPage]
+  declarations: [],
 })
-export class MovieDetailPageModule {}
+export class ChooseTheaterPageModule {}
