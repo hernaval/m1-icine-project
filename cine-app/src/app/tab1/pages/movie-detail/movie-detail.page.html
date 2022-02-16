@@ -1,0 +1,27 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="fixed-bg" style="background-image: url('/assets/poster/hill.jpg');">
+
+  </div>
+  <div class="movie-detail-container" >
+    <div class="movie-poster"  >
+      <ion-img style="width: 150px" src="/assets/poster/hill.jpg"></ion-img>
+    </div>
+
+    <div class="movie-action">
+        <h6>Title</h6>
+        <span>2022 - action - 2h40m</span>
+
+        <ion-button (click)="onClick()" expand="block" fill="solid" color="primary">
+          Click me
+        </ion-button>
+    </div>
+  </div>
+</ion-content>

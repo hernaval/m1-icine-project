@@ -1,0 +1,9 @@
+.movie-item-container {
+    max-width: 100px;
+    border-radius: 15px;
+    overflow: hidden;
+    ion-img {
+        max-width: fit-content;
+        
+    }
+}

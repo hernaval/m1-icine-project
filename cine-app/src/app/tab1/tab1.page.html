@@ -1,0 +1,30 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar >
+    <ion-item lines="none" slot="start">
+      <ion-avatar>
+        <img [src]="" />
+      </ion-avatar>
+      <ion-label>Awesome Label</ion-label>
+    </ion-item>
+
+    <ion-button slot="end" fill="outline"  >
+      <ion-icon slot="icon-only" name="notifications"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-text color="primary">
+    <h2>Categories</h2>
+  </ion-text>
+
+  <app-movie-category [category]="horror"></app-movie-category>
+
+  <app-movie-item [movie]="movie" (requestDetailEvent)="goToDetail(movie)"></app-movie-item>
+
+  <ion-text color="primary">
+    <h2>Prochainement</h2>
+  </ion-text>
+  <app-movie-item [movie]="movie" (requestDetailEvent)="goToDetail(movie)"></app-movie-item>
+
+</ion-content>

@@ -1,0 +1,12 @@
+<div class="movie-item-container" >
+  <div class="poster-img">
+    <ion-img [src]="'/assets/poster/'+movie.poster"></ion-img>
+  </div>
+  <div class="movie-desc-container">
+    <h6 class="movie-title">{{movie.title}}</h6>
+    <div class="rating"></div>
+  </div>
+  <ion-button  expand="block" fill="clear" shape="round" (click)="viewDetail(movie)" >
+    Click me
+  </ion-button>
+</div>
